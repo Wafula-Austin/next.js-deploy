@@ -13,6 +13,20 @@ export default function Experiences() {
             location : 'Tech Solutions Ltd., Nairobi, Kenya Nairobi',
             description : ['Designed and developed user interfaces using HTML5, CSS3, and JavaScript','Implemented responsive design principles for cross-browser compatibility','Collaborated with back-end developers to integrate front-end components.','Assisted in the deployment and maintenance of web applications on various hosting platforms.'],
             tech_used : ['JavaScript','HTML','CSS']
+            tech_used : [
+                {
+                    id : 1,
+                    tech : 'JavaScript'
+                },
+                {
+                    id : 2,
+                    tech : 'HTML'
+                },
+                {
+                    id : 3,
+                    tech : 'CSS'
+                }
+            ]
         },
         {
             id : 2,
@@ -22,6 +36,28 @@ export default function Experiences() {
             location : 'Web Teck Ltd., Nairobi, Kenya Nairobi',
             description : ['Designed and developed user interfaces using HTML5, CSS3, and JavaScript','Implemented responsive design principles for cross-browser compatibility','Collaborated with back-end developers to integrate front-end components.','Assisted in the deployment and maintenance of web applications on various hosting platforms.'],
             tech_used : ['JavaScript','Tailwind CSS','React.js','Node.js','Figma']
+            tech_used : [
+                {
+                    id : 5,
+                    tech : 'JavaScript'
+                },
+                {
+                    id : 6,
+                    tech : 'Tailwind CSS'
+                },
+                {
+                    id : 7,
+                    tech : 'React.js'
+                },
+                {
+                    id : 8,
+                    tech : 'Node.js'
+                },
+                {
+                    id : 9,
+                    tech : 'Figma'
+                }
+            ]
         }
     ]
   return (
@@ -35,7 +71,7 @@ export default function Experiences() {
                             <div className = 'md:mx-2 flex flex-col gap-y-2'>
                                 <h1 className = 'group-hover:text-teal-500 font-semibold text-md md:text-lg text-slate-200'>{xp.title}.</h1>
                                 <ul className = 'text-slate-500 font-semibold flex flex-col gap-y-1 w-[500px] text-md'>{xp.description.map((des)=>(<li key = {des} className='group-hover:text-slate-400 text-sm'>{des}</li>))}</ul>
-                                <div className = 'flex items-center gap-x-1 md:gap-x-2'>{xp.tech_used.map((tu)=>(<h1 key = {tu} className = 'text-teal-400 px-2 py-1 rounded-2xl text-center bg-teal-900/40 font-semibold text-sm subpixel-antialiased'>{tu}</h1>))}</div>
+                                <div className = 'flex items-center gap-x-1 md:gap-x-2'>{xp.tech_used.map((tu)=>(<h1 key = {tu.id} className = 'text-teal-400 px-2 py-1 rounded-2xl text-center bg-teal-900/40 font-semibold text-sm subpixel-antialiased'>{tu.tech}</h1>))}</div>
                             </div>
                         </div>
                     )
