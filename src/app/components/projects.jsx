@@ -54,7 +54,7 @@ export default function Projects() {
                 <h1 className = 'text-slate-200 font-semibold text-lg group-hover:text-teal-300'>{project.title}</h1>
                 <p className = 'w-[500px] text-slate-500'>{project.description}</p>
                 <div className = 'flex items-center gap-x-3'>
-                  {project.tech_used.map((tech)=>(<p className = 'text-teal-200 border-b-2 border-teal-600 py-[2px]'>{tech}</p>))}
+                  {project.tech_used.map((tech)=>(<p key = {tech} className = 'text-teal-200 border-b-2 border-teal-600 py-[2px]'>{tech}</p>))}
                 </div>
               </div>
 

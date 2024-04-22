@@ -34,8 +34,8 @@ export default function Experiences() {
                             <h1 className = 'font-semibold text-slate-600 text-md'>{xp.start_date} - {xp.end_date}</h1>
                             <div className = 'md:mx-2 flex flex-col gap-y-2'>
                                 <h1 className = 'group-hover:text-teal-500 font-semibold text-md md:text-lg text-slate-200'>{xp.title}.</h1>
-                                <ul className = 'text-slate-500 font-semibold flex flex-col gap-y-1 w-[500px] text-md'>{xp.description.map((des)=>(<li className='group-hover:text-slate-400 text-sm'>{des}</li>))}</ul>
-                                <div className = 'flex items-center gap-x-1 md:gap-x-2'>{xp.tech_used.map((tu)=>(<h1 className = 'text-teal-400 px-2 py-1 rounded-2xl text-center bg-teal-900/40 font-semibold text-sm subpixel-antialiased'>{tu}</h1>))}</div>
+                                <ul className = 'text-slate-500 font-semibold flex flex-col gap-y-1 w-[500px] text-md'>{xp.description.map((des)=>(<li key = {des} className='group-hover:text-slate-400 text-sm'>{des}</li>))}</ul>
+                                <div className = 'flex items-center gap-x-1 md:gap-x-2'>{xp.tech_used.map((tu)=>(<h1 key = {tu} className = 'text-teal-400 px-2 py-1 rounded-2xl text-center bg-teal-900/40 font-semibold text-sm subpixel-antialiased'>{tu}</h1>))}</div>
                             </div>
                         </div>
                     )
