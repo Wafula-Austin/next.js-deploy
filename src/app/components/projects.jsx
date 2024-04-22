@@ -45,7 +45,7 @@ export default function Projects() {
       {
         projects.map(
           (project)=>(
-            <div className = 'md:flex group md:gap-x-4 p-3 md:px-8 md:py-5 hover:bg-zinc-600/30 rounded-xl cursor-pointer hover:shadow-md shadow-zinc-300 overflow-scroll scrollbar-hide' key = {project.id}>
+            <div key = {project.id} className = 'md:flex group md:gap-x-4 p-3 md:px-8 md:py-5 hover:bg-zinc-600/30 rounded-xl cursor-pointer hover:shadow-md shadow-zinc-300 overflow-scroll scrollbar-hide' key = {project.id}>
               <div className = 'my-2 md:my-0 w-[170px] h-[100px] relative border border-zinc-700 group-hover:border-slate-200 rounded-xl'>
                 <Image src = {project.image} alt = '' fill objectFit = 'contain'/>
               </div>
