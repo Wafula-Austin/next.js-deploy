@@ -46,7 +46,7 @@ export default function LeftSide(){
 
     const GitHubLink = ()=>(
         <div>
-            <a href = 'https://github.com/Wafula-Austin?tab=repositories' target="_blank" rel="noopener noreferrer">
+            <a href = 'https://https://github.com/Wafula-Austin/next.js-deploy' target="_blank" rel="noopener noreferrer">
                 <FaGithub size = {25} className = {`text-slate-400 hover:text-slate-700 cursor-pointer`}/>
             </a>
         </div>
