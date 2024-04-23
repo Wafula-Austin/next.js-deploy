@@ -9,7 +9,6 @@ export default function LeftSide(){
     const [ aboutActive , setAboutActive ] = useState(true)
     const [ xpActive , setXpActive ] = useState(false)
     const [ projectsActive , setProjectsActive ] = useState(false)
-    const [ position , setPosition ] = useState()
 
     const checkScroll = ()=>{
         if(window.scrollY > 0 && window.scrollY <= 650){
