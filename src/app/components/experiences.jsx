@@ -66,7 +66,7 @@ export default function Experiences() {
             experiences.map(
                 (xp)=>{
                     return(
-                        <div key = {xp.id} className = 'group justify-start gap-y-2 md:flex md:gap-x-4 mb-4 cursor-pointer hover:bg-zinc-600/20 p-4 rounded-xl ' key = {xp.id}>
+                        <div key = {xp.id} className = 'group justify-start gap-y-2 md:flex md:gap-x-4 mb-4 cursor-pointer hover:bg-zinc-600/20 p-4 rounded-xl '>
                             <h1 className = 'font-semibold text-slate-600 text-md'>{xp.start_date} - {xp.end_date}</h1>
                             <div className = 'md:mx-2 flex flex-col gap-y-2'>
                                 <h1 className = 'group-hover:text-teal-500 font-semibold text-md md:text-lg text-slate-200'>{xp.title}.</h1>
