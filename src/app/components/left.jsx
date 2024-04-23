@@ -36,6 +36,22 @@ export default function LeftSide(){
         }
     })
 
+    const LinkedInLink = ()=>(
+        <div>
+            <a href = 'https://linkedIn.com/in/austinwafula254' target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size = {25} className = {`text-slate-400 hover:text-slate-700 cursor-pointer`}/>
+            </a>
+        </div>
+    )
+
+    const GitHubLink = ()=>(
+        <div>
+            <a href = 'https://github.com/Wafula-Austin?tab=repositories' target="_blank" rel="noopener noreferrer">
+                <FaGithub size = {25} className = {`text-slate-400 hover:text-slate-700 cursor-pointer`}/>
+            </a>
+        </div>
+    )
+
     return(
         <motion.div initial = {{ x : 0}} animate = {{ x : 0}} transition = {{ delay : 1 , duration : 1}} className = 'flex-col justify-start md:fixed px-4 md:px-[70px]'>
             <div className = 'mb-8 md:mb-12'>
@@ -49,10 +65,8 @@ export default function LeftSide(){
                 <motion.h1 initial = {{x : 0}} animate = {{x : projectsActive && 1}} transition={{duration : 2}}  className = {`flex items-center font-semibold gap-x-2 hover:scale-120 cursor-pointer text-slate-700 ${projectsActive && ` text-teal-500`}`}><GoDash size = {projectsActive ? 40 : 15}/> PROJECTS</motion.h1>
             </div>
             <div className = 'flex items-center gap-x-4 md:gap-x-6'>
-                <FaLinkedin size = {25} className = {`text-slate-400 hover:text-slate-700 cursor-pointer`}/>
-                <FaGithub size = {25} className = {`text-slate-400 hover:text-slate-700 cursor-pointer`}/>
-                <FaFacebookSquare size = {25} className = {`text-slate-400 hover:text-slate-700 cursor-pointer`}/>
-                <FaInstagram size = {25} className = {`text-slate-400 hover:text-slate-700 cursor-pointer`}/>
+                <LinkedInLink/>
+                <GitHubLink />
             </div>    
         </motion.div>
     )
