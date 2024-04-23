@@ -12,7 +12,6 @@ export default function Experiences() {
             title : 'Web Developer Intern',
             location : 'Tech Solutions Ltd., Nairobi, Kenya Nairobi',
             description : ['Designed and developed user interfaces using HTML5, CSS3, and JavaScript','Implemented responsive design principles for cross-browser compatibility','Collaborated with back-end developers to integrate front-end components.','Assisted in the deployment and maintenance of web applications on various hosting platforms.'],
-            tech_used : ['JavaScript','HTML','CSS']
             tech_used : [
                 {
                     id : 1,
@@ -35,7 +34,6 @@ export default function Experiences() {
             title : 'Front-End Developer Intern',
             location : 'Web Teck Ltd., Nairobi, Kenya Nairobi',
             description : ['Designed and developed user interfaces using HTML5, CSS3, and JavaScript','Implemented responsive design principles for cross-browser compatibility','Collaborated with back-end developers to integrate front-end components.','Assisted in the deployment and maintenance of web applications on various hosting platforms.'],
-            tech_used : ['JavaScript','Tailwind CSS','React.js','Node.js','Figma']
             tech_used : [
                 {
                     id : 5,

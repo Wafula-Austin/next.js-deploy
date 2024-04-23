@@ -16,7 +16,16 @@ export default function Projects() {
       title : 'JavaScript Calculator.',
       description : 'A modern calculator built with Next.js and JavaScript for the logic.',
       image : calc,
-      tech_used : [{id : 1, tech : 'Next.js'},{id : 2, tech : 'Tailwind CSS'}]
+      tech_used : [
+        {
+          id : 1, 
+          tech : 'Next.js'
+        },
+        {
+          id : 2, 
+          tech : 'Tailwind CSS'
+        }
+      ]
     },
     {
       id: 2,
@@ -67,7 +76,6 @@ export default function Projects() {
       title : 'Weather Dashboard.',
       description : 'A weather dashboard that uses an API to retrieve realtime weather data for a particular location.',
       image : weatherdash,
-      tech_used : ['Next.js','React Icons','Open Weather API'],
       tech_used : [
         {
           id : 10,
