@@ -24,7 +24,7 @@ export default function Hero() {
         else if(window.scrollY < 606){
             setShowNav(false)
             setShowXp(false)
-            setShowProject(false)
+            setShowProject(true)
         }
     }
 

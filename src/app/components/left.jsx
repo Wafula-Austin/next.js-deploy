@@ -3,13 +3,13 @@ import React , {useState , useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { FaGithub , FaLinkedin , FaInstagram , FaFacebookSquare } from "react-icons/fa"
 import { GoDash } from "react-icons/go"
-import Link from 'next/link'
 
 export default function LeftSide(){
 
     const [ aboutActive , setAboutActive ] = useState(true)
     const [ xpActive , setXpActive ] = useState(false)
     const [ projectsActive , setProjectsActive ] = useState(false)
+    const [ position , setPosition ] = useState()
 
     const checkScroll = ()=>{
         if(window.scrollY > 0 && window.scrollY <= 650){
@@ -17,12 +17,12 @@ export default function LeftSide(){
             setXpActive(false)
             setProjectsActive(false)
         }
-        else if(window.scrollY >651 && window.scrollY <= 1414){
+        else if(window.scrollY >651 && window.scrollY <= 1210){
             setXpActive(true)
             setProjectsActive(false)
             setAboutActive(false)
         }
-        else if(window.scrollY > 1414){
+        else if(window.scrollY > 1211){
             setXpActive(false)
             setProjectsActive(true)
             setAboutActive(false)

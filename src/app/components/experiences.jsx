@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md"
+import Link from 'next/link'
 
 export default function Experiences() {
 
@@ -58,6 +59,13 @@ export default function Experiences() {
             ]
         }
     ]
+
+    const ViewFullResume = ()=>(
+        <a href = 'https://linkedIn.com/in/austinwafula254' target='_blank' rel='noopener noreferrer'>
+            <h1 className = 'font-semibold text-md md:text-lg text-zinc-300 cursor-pointer hover:ml-4 transition-all hover:text-teal-300 flex items-center gap-x-1'>View Full Resume <MdArrowOutward/></h1>
+        </a>
+    )
+
   return (
     <div className = 'my-4 md:my-6 flex flex-col gap-y-3 md:gap-y-6 justify-start'>
         {
@@ -76,7 +84,7 @@ export default function Experiences() {
                 }
             )
         } 
-        <h1 className = 'font-semibold text-md md:text-lg text-zinc-300 cursor-pointer hover:ml-4 transition-all hover:text-teal-300 flex items-center gap-x-1'>View Full Resume <MdArrowOutward/></h1>
+        <ViewFullResume/>
     </div>
   )
 }

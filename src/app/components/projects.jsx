@@ -114,7 +114,6 @@ export default function Projects() {
           )
         )
       }
-      <Link href = '/pages/projects' className = 'text-slate-200 font-semibold text-lg hover:ml-2 cursor-pointer hover:text-teal-300'>View Full Project Archive</Link>
     </div>
   )
 }
