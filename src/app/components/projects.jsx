@@ -4,7 +4,7 @@ import Image from 'next/image'
 import calc from '../images/calc.png'
 import nclone from '../images/netflix.png'
 import tmanager from '../images/tasks.png'
-import weatherdash from '../images/weatherdash.png'
+import weatherdash from '../images/apweather.png'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
